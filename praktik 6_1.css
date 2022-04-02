@@ -1,0 +1,59 @@
+@keyframes rotation{
+   0% {
+        transform: rotate(0);
+}
+100%{
+    transform: rotate(360deg);
+    }
+}
+body{
+    margin: 15%;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0349a5;
+}
+
+.audio{
+    display: flex;
+    columns: 2rem;
+}
+.button{
+    padding: 7px 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .4s all;
+}
+
+.button:hover{
+    transform: scale(1.1);
+}
+
+.Playbtn{
+    color: #032991;
+    background-color: rgb(143, 146, 146);
+    border: 3px solid black;
+}
+
+.Pausebtn{
+    color: #032991;
+    background-color: rgb(143, 146, 146);
+    border: 3px solid black;
+}
+
+.Loadingbtn{
+    position: relative;
+    animation-name: rotation;
+    animation-duration: 4;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    background-color: #0509ca;
+}
+
+.loading_hidden{
+    display: none;
+}
